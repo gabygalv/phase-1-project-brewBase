@@ -2,33 +2,80 @@
     "dotd": [
       {
         "id": "1",
-        "name": "Strawberry Mojito",
+        "name": "Ale",
         "likes": 3,
-        "img": "https://www.acouplecooks.com/wp-content/uploads/2021/05/Strawberry-Mojito-008.jpg"
+        "dislikes": 5,
+        "img": "https://www.allagash.com/wp-content/uploads/Cascara-stories-3-scaled.jpg"
       },
       {
         "id": "2",
-        "name": "Manos: The Hands Of Fate",
+        "name": "Lager",
         "likes": 50,
-        "img": "https://www.gstatic.com/tv/thumb/v22vodart/47781/p47781_v_v8_ac.jpg"
+        "dislikes": 5,
+        "img": "https://cdn.britannica.com/65/137065-050-A42EB154/Lager-beer.jpg"
       },
       {
         "id": "3",
-        "name": "Time Chasers",
+        "name": "Porter",
         "likes": 50,
-        "img": "https://www.gstatic.com/tv/thumb/v22vodart/23342/p23342_v_v8_ab.jpg"
+        "dislikes": 5,
+        "img": "https://hips.hearstapps.com/esquire/assets/cm/15/05/54cc893c92566_-_esq-porter-0412-lg-2962451.jpg"
       },
       {
         "id": "4",
-        "name": "The Touch Of Satan",
+        "name": "Stout",
         "likes": 40,
-        "img": "https://www.gstatic.com/tv/thumb/v22vodart/43468/p43468_v_v8_aa.jpg"
+        "dislikes": 5,
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Stadin_Panimo_Double_Oat_Malt_Stout.jpg/1200px-Stadin_Panimo_Double_Oat_Malt_Stout.jpg"
       },
       {
         "id": "5",
-        "name": "Santa Claus Conquers The Martians",
+        "name": "Blonde Ale",
         "likes": 50,
-        "img": "https://www.gstatic.com/tv/thumb/v22vodart/4232/p4232_v_v8_aa.jpg"
+        "dislikes": 5,
+        "img": "https://wildleap.com/wp-content/uploads/LocalGold-470x520-1.png"
+      },
+      {
+        "id": "6",
+        "name": "Brown Ale",
+        "likes": 40,
+        "dislikes": 5,
+        "img": "https://avery-website-prod.s3.us-west-2.amazonaws.com/elliesbrown_product_c5a30458e6.png"
+      },
+      {
+        "id": "7",
+        "name": "Pale Ale",
+        "likes": 40,
+        "dislikes": 5,
+        "img": "https://www.oskarblues.com/wp-content/uploads/2018/11/Dales-Render-With-Copy.png"
+      },
+      {
+        "id": "8",
+        "name": "India Pale Ale",
+        "likes": 40,
+        "dislikes": 5,
+        "img": "https://lakefrontbrewery.com/wp-content/uploads/2021/04/ipa-bg.png"
+      },
+      {
+        "id": "9",
+        "name": "Wheat",
+        "likes": 40,
+        "dislikes": 5,
+        "img": "https://www.brewer-world.com/wp-content/uploads/2021/06/Wheat-Beer-Header.jpg"
+      },
+      {
+        "id": "10",
+        "name": "Pilsner",
+        "likes": 40,
+        "dislikes": 5,
+        "img": "https://cb.scene7.com/is/image/Crate/DirectionPilsner17ozSHS16/$web_pdp_main_carousel_low$/220913132908/direction-pilsner-beer-glass.jpg"
+      },
+      {
+        "id": "11",
+        "name": "Sour Ale",
+        "likes": 40,
+        "dislikes": 5,
+        "img": "https://sierranevada.com/wp-content/uploads/2021/11/Big-Chico-Kriek_1800x1800.jpg"
       }
     ]
   }

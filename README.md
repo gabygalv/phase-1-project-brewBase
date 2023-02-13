@@ -14,13 +14,15 @@ https://docs.google.com/presentation/d/e/2PACX-1vSifhtPH1qb-meQwjbNkTWJmhaRjefqv
 # Repo link
 https://github.com/gabygalv/phase-1-project-brewBase
 
+////////////////////////////////////////////////////////////////////////////////
+
 # Project elements
 - Event listeners
-    Form submission
-    Buttons to switch between existing objects
-    Liking or some sort of counting functionality
+    - Form submission: Add your own brewery to the list using a form that accepts brewery name, brewery type, and address
+    - event listeners to switch between existing objects
+    - Liking or some sort of counting functionality
 - Array iteration
-    forEach iteration
+    - forEach iteration to flip through listed breweries
 
 - List breweries using this API https://api.openbrewerydb.org/breweries
     Brewery name
@@ -31,3 +33,5 @@ https://github.com/gabygalv/phase-1-project-brewBase
     Image
     Name of drink/where you can get it
     Number of likes
+
+

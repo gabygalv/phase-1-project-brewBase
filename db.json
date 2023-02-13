@@ -1,0 +1,34 @@
+{
+    "dotd": [
+      {
+        "id": "1",
+        "name": "Strawberry Mojito",
+        "likes": 3,
+        "img": "https://www.acouplecooks.com/wp-content/uploads/2021/05/Strawberry-Mojito-008.jpg"
+      },
+      {
+        "id": "2",
+        "name": "Manos: The Hands Of Fate",
+        "likes": 50,
+        "img": "https://www.gstatic.com/tv/thumb/v22vodart/47781/p47781_v_v8_ac.jpg"
+      },
+      {
+        "id": "3",
+        "name": "Time Chasers",
+        "likes": 50,
+        "img": "https://www.gstatic.com/tv/thumb/v22vodart/23342/p23342_v_v8_ab.jpg"
+      },
+      {
+        "id": "4",
+        "name": "The Touch Of Satan",
+        "likes": 40,
+        "img": "https://www.gstatic.com/tv/thumb/v22vodart/43468/p43468_v_v8_aa.jpg"
+      },
+      {
+        "id": "5",
+        "name": "Santa Claus Conquers The Martians",
+        "likes": 50,
+        "img": "https://www.gstatic.com/tv/thumb/v22vodart/4232/p4232_v_v8_aa.jpg"
+      }
+    ]
+  }

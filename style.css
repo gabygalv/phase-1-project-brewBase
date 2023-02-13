@@ -6,7 +6,7 @@ body {
     color:white;
     margin-left: 6%;
     font-family: Calibri, Candara, Segoe, "Segoe UI";
-    font-size:40px;
+    font-size:3vw;
 }
 
 .divider {
@@ -44,7 +44,7 @@ body {
     margin-top: auto;
     top: -50px;
     font-family: Calibri, Candara, Segoe, "Segoe UI";
-    font-size: 40px;
+    font-size: 1.5vw;
 }
 
 .dotd_name {
@@ -52,10 +52,10 @@ body {
     color: white;
     margin-top: auto;
     margin-left: auto;
-    left: 35%;
+    left: 20%;
     top: 3%;
     font-family: Calibri, Candara, Segoe, "Segoe UI";
-    font-size: 20px;
+    font-size: 2vw;
 }
 
 .dotd_rating {
@@ -64,7 +64,7 @@ body {
     margin-top: auto;
     margin-left: auto;
     font-family: Calibri, Candara, Segoe, "Segoe UI";
-    font-size: 30px;
+    font-size: 2vw;
     left: 45%;
     top: 90%;
 }
@@ -73,7 +73,7 @@ body {
     position: absolute;
     background-color: #17172E;
     border: none;
-    font-size: 30px;
+    font-size: 2vw;
     cursor: pointer;
     margin-left: auto;
     margin-top: auto;
@@ -85,7 +85,7 @@ body {
     position: absolute;
     background-color: #17172E;
     border: none;
-    font-size: 30px;
+    font-size: 2vw;
     cursor: pointer;
     margin-left: auto;
     margin-top: auto;
@@ -110,7 +110,7 @@ body {
     margin-top: auto;
     top: -6%;
     font-family: Calibri, Candara, Segoe, "Segoe UI";
-    font-size: 40px;
+    font-size: 2.5vw;
 }
 .brewery_list {
     position: relative;
@@ -118,7 +118,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     font-family: Calibri, Candara, Segoe, "Segoe UI";
-    font-size: 30px;
+    font-size: 1.5vw;
 }
 
 .add_button {
@@ -127,7 +127,7 @@ body {
     color: white;
     cursor: pointer;
 
-    font-size: 20px;
+    font-size: 1.5vw;
     font-family: Calibri, Candara, Segoe, "Segoe UI";
 
     margin-top: auto;

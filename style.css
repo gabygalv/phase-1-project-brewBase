@@ -1,0 +1,18 @@
+body {
+    background-color: #070720;
+}
+
+.brewery_header {
+    color:white;
+    margin-left: 200px;
+    font-family: Calibri, Candara, Segoe, "Segoe UI";
+    font-size:40px;
+}
+
+.divider {
+    background-color: #28283e;
+    border: 5px #2c2c40;
+    width: 90.9%;
+    padding: 20px;
+    margin-left: 200px;
+}

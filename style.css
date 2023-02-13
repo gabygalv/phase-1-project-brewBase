@@ -16,3 +16,57 @@ body {
     padding: 20px;
     margin-left: 200px;
 }
+
+.dotd_container { 
+    background-color: #17172E;
+    border: 5px #2c2c40;
+    width: 500px;
+    height: 800px;
+    margin-left: 200px;
+    margin-top: 60px;
+}
+
+.dotd_image {
+    width: 450px;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.dotd_header {
+    color:white;
+    margin-top: -630px;
+    font-family: Calibri, Candara, Segoe, "Segoe UI";
+    font-size: 30px;
+}
+
+.dotd_name {
+    color:white;
+    margin-top: 625px;
+    margin-left: 35%;
+    font-family: Calibri, Candara, Segoe, "Segoe UI";
+    font-size: 30px;
+}
+
+.dotd_like {
+    background-color: #17172E;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    margin-left: 150px;
+}
+
+.dotd_dislike {
+    background-color: #17172E;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    margin-left: 80px;
+}
+
+.dotd_rating {
+    color:white;
+    margin-top: -40px;
+    margin-left: 46%;
+    font-family: Calibri, Candara, Segoe, "Segoe UI";
+    font-size: 30px;
+}

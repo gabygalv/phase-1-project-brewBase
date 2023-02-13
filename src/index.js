@@ -45,21 +45,26 @@ function renderDotdItem(drink) {
     let drinkName = document.querySelector('.dotd_name');
     let drinkImg = document.querySelector('.dotd_image');
     let drinkLikes = document.querySelector('.dotd_rating');
+    let nbrLikes = drink.likes - drink.dislikes;
+    
 
     drinkName.innerText = drink.name;
     drinkImg.src = drink.img;
-    drinkLikes.innerText = parseInt(drink.likes);
+    drinkLikes.innerText = nbrLikes;
 
     upvote.addEventListener ('click', () => {
-        console.log('upvote clicked');
-        console.log(drinkLikes.innerText);
-        drinkLikes +=1;
+        nbrLikes +=1;
+        drinkLikes.textContent = nbrLikes;
+        downvote.disabled = true;
+        upvote.disabled = true;
      })
     
      downvote.addEventListener ('click', () => {
-        console.log('downvote clicked');
-        console.log(drinkLikes.innerText);
-        drinkLikes -=1;
+        drink.dislikes +=1;
+        nbrLikes -=1;
+        drinkLikes.textContent = nbrLikes;
+        downvote.disabled = true;
+        upvote.disabled = true;
      })
 };
 

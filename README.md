@@ -4,7 +4,7 @@
 A brewery viewing site: allows users to fill out a form to add new breweries, browse past submissions, and highlights a drink of the day (that users can like). 
 
 # Wireframe
-https://docs.google.com/presentation/d/e/2PACX-1vSifhtPH1qb-meQwjbNkTWJmhaRjefqv9axXRuTe7a9GpuUodtFLtC6Q-7nF8SxvQjeUodoJg07I9bf/pub?start=true&loop=false&delayms=3000
+https://wireframe.cc/bzhb7T
 
 # User stories
 → As a user I want to be able to view brewery information for all listed breweries

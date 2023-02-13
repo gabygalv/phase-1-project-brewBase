@@ -4,69 +4,103 @@ body {
 
 .brewery_header {
     color:white;
-    margin-left: 200px;
+    margin-left: 6%;
     font-family: Calibri, Candara, Segoe, "Segoe UI";
     font-size:40px;
 }
 
 .divider {
+    position: static;
     background-color: #28283e;
     border: 5px #2c2c40;
-    width: 90.9%;
-    padding: 20px;
-    margin-left: 200px;
+    width: calc(100.25% - 6%);
+    height: 50px;
+    margin-right: 0;
+    margin-left: 6%;
 }
 
 .dotd_container { 
+    position: absolute;
     background-color: #17172E;
     border: 5px #2c2c40;
-    width: 500px;
-    height: 800px;
-    margin-left: 200px;
-    margin-top: 60px;
+    width: 16%;
+    height: 45%;
+    left: 6.25%;
+    margin-left: auto;
+    margin-top: 2%;
 }
 
 .dotd_image {
-    width: 450px;
+    position: static;
+    width: 90%;
+    height: 75%;
     margin-left: 5%;
     margin-top: 5%;
 }
 
 .dotd_header {
-    color:white;
-    margin-top: -630px;
+    position: absolute;
+    color: white;
+    margin-top: auto;
+    top: -50px;
     font-family: Calibri, Candara, Segoe, "Segoe UI";
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .dotd_name {
-    color:white;
-    margin-top: 625px;
-    margin-left: 35%;
+    position: relative;
+    color: white;
+    margin-top: auto;
+    margin-left: auto;
+    left: 35%;
+    top: 3%;
     font-family: Calibri, Candara, Segoe, "Segoe UI";
     font-size: 30px;
-}
-
-.dotd_like {
-    background-color: #17172E;
-    border: none;
-    font-size: 30px;
-    cursor: pointer;
-    margin-left: 150px;
-}
-
-.dotd_dislike {
-    background-color: #17172E;
-    border: none;
-    font-size: 30px;
-    cursor: pointer;
-    margin-left: 80px;
 }
 
 .dotd_rating {
+    position: absolute;
     color:white;
-    margin-top: -40px;
-    margin-left: 46%;
+    margin-top: auto;
+    margin-left: auto;
     font-family: Calibri, Candara, Segoe, "Segoe UI";
     font-size: 30px;
+    left: 45%;
+    top: 90%;
 }
+
+.dotd_like {
+    position: absolute;
+    background-color: #17172E;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-top: auto;
+    left: 25%;
+    top: 90%;
+}
+
+.dotd_dislike {
+    position: absolute;
+    background-color: #17172E;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-top: auto;
+    left: 60%;
+    top: 90%;
+}
+/*
+.list_container {
+    position: absolute;
+    background-color: white;
+    border: 5px #2c2c40;
+    width: 84%;
+    height: 800px;
+    right: 0;
+    margin-left: 800px;
+    margin-top: -800px;
+}
+*/

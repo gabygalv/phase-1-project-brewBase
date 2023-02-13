@@ -65,6 +65,20 @@ function renderDotdItem(drink) {
         drinkLikes.textContent = nbrLikes;
         downvote.disabled = true;
         upvote.disabled = true;
+
+        /*
+        fetch("http://localhost:3000/dotd", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json"
+        },
+        body: JSON.stringify({
+             "Dislikes": drink.dislikes
+        })
+          })
+          */
+
      })
 };
 

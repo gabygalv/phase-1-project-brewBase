@@ -105,3 +105,16 @@ if (addBrewery) {
     formCont.style.display = "none";
 }
 });
+
+//light mode toggle
+const lightDark = document.querySelector(".colorScheme");
+function btnToggle() {
+    const stylesheet = document.querySelector('.stylesheet')
+    if(lightDark.innerHTML == "🌙"){
+        lightDark.textContent = "☀️";
+        stylesheet.href= "lightstyle.css"
+    } else if(lightDark.innerHTML=="☀️"){
+        lightDark.textContent = "🌙";
+        stylesheet.href= "style.css"
+    }
+}

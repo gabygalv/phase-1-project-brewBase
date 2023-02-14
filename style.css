@@ -129,6 +129,18 @@ body {
     font-size: 1vw;
 }
 
+.brewery_details {
+    position: absolute;
+    color: white;
+    margin-left: 45%;
+    margin-right: auto;
+    font-family: Calibri, Candara, Segoe, "Segoe UI";
+    font-size: 1.1vw;
+}
+.brewery_link {
+color: white;
+}
+
 .add_button {
     position: absolute;
     background-color: blue;

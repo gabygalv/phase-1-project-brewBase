@@ -28,10 +28,17 @@ fetch(brewAPI)
 //will fill in when we have a div for brewery details
 function breweryDetails(brewery) {
     //  console.log(brewery);
-    const breweryName = ''
-    const breweryType =''
-    const breweryAddress = ''
-    const breweryPhone = ''
+    const breweryName = document.querySelector('.brewery_name')
+    const breweryType = document.querySelector('.brewery_type')
+    const breweryAddress = document.querySelector('.brewery_location')
+    const breweryWebsite = document.querySelector('.brewery_website')
+    const breweryLink = document.querySelector('.brewery_link')
+
+    breweryName.innerText = brewery.name;
+    breweryType.innerText = brewery.brewery_type;
+    breweryAddress.innerText = `${brewery.city}, ${brewery.state}`;
+    breweryWebsite.innerText = brewery.website_url;
+    breweryLink.href = brewery.website_url;
 };
 
 /////////////////////////

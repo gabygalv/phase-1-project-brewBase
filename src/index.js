@@ -61,10 +61,19 @@ function renderDotdItem(drink) {
     drinkLikes.innerText = nbrLikes;
 
     upvote.addEventListener ('click', () => {
+        drink.likes +=1;
         nbrLikes +=1;
         drinkLikes.textContent = nbrLikes;
         downvote.disabled = true;
         upvote.disabled = true;
+
+        fetch(drinkOfTheDay, {
+            method: "PATCH",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({likes: drink.likes})
+            })
      })
     
      downvote.addEventListener ('click', () => {
@@ -74,18 +83,13 @@ function renderDotdItem(drink) {
         downvote.disabled = true;
         upvote.disabled = true;
 
-        /*
-        fetch("http://localhost:3000/dotd", {
-        method: "POST",
+        fetch(drinkOfTheDay, {
+        method: "PATCH",
         headers: {
-            "Content-Type": "application/json",
-            Accept: "application/json"
+            "Content-Type": "application/json"
         },
-        body: JSON.stringify({
-             "Dislikes": drink.dislikes
+        body: JSON.stringify({dislikes: drink.dislikes})
         })
-          })
-          */
 
      })
 };

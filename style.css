@@ -166,11 +166,12 @@ color: white;
     margin-top: 30%;
 }
 .form_header {
-    position: static;
+    position: absolute;
     color: white;
     margin-left: auto;
     margin-top: auto;
-    top: -6%;
+    padding: 10px 5px;
+    top: -15%;
     font-family: Calibri, Candara, Segoe, "Segoe UI";
     font-size: 1.5vw;
 }

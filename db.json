@@ -3,14 +3,14 @@
     {
       "id": "1",
       "name": "Ale",
-      "likes": 3,
+      "likes": 16,
       "dislikes": 5,
       "img": "https://www.allagash.com/wp-content/uploads/Cascara-stories-3-scaled.jpg"
     },
     {
       "id": "2",
       "name": "Lager",
-      "likes": 50,
+      "likes": 51,
       "dislikes": 5,
       "img": "https://cdn.britannica.com/65/137065-050-A42EB154/Lager-beer.jpg"
     },
@@ -24,7 +24,7 @@
     {
       "id": "4",
       "name": "Stout",
-      "likes": 40,
+      "likes": 1,
       "dislikes": 5,
       "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Stadin_Panimo_Double_Oat_Malt_Stout.jpg/1200px-Stadin_Panimo_Double_Oat_Malt_Stout.jpg"
     },
@@ -68,7 +68,7 @@
       "id": "10",
       "name": "Pilsner",
       "likes": 40,
-      "dislikes": 5,
+      "dislikes": 6,
       "img": "https://cb.scene7.com/is/image/Crate/DirectionPilsner17ozSHS16/$web_pdp_main_carousel_low$/220913132908/direction-pilsner-beer-glass.jpg"
     },
     {

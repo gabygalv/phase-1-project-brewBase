@@ -52,45 +52,47 @@ body {
     color: white;
     margin-top: auto;
     margin-left: auto;
-    left: 20%;
+    text-align: center;
     top: 3%;
     font-family: Calibri, Candara, Segoe, "Segoe UI";
-    font-size: 2vw;
+    font-size: 1vw;
 }
 
 .dotd_rating {
-    position: absolute;
+    position: relative;
     color:white;
     margin-top: auto;
     margin-left: auto;
     font-family: Calibri, Candara, Segoe, "Segoe UI";
-    font-size: 2vw;
-    left: 45%;
-    top: 90%;
+    font-size: 1.5vw;
+    text-align: center;
+    top: 0%;
 }
 
 .dotd_like {
     position: absolute;
-    background-color: #17172E;
+    background-color: #17172e00;
     border: none;
-    font-size: 2vw;
+    font-size: 1.5vw;
     cursor: pointer;
     margin-left: auto;
     margin-top: auto;
+    text-align: center;
+    top: 88%;
     left: 25%;
-    top: 90%;
 }
 
 .dotd_dislike {
     position: absolute;
-    background-color: #17172E;
+    background-color: #17172e00;
     border: none;
-    font-size: 2vw;
+    font-size: 1.5vw;
     cursor: pointer;
     margin-left: auto;
     margin-top: auto;
+    text-align: center;
+    top: 88%;
     left: 60%;
-    top: 90%;
 }
 
 .list_container {

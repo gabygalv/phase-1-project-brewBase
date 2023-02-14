@@ -135,3 +135,22 @@ body {
     top: 93%;
     left: 1%;
 }
+.form_container {
+    position: absolute;
+    background-color: #17172E;
+    border: 5px #2c2c40;
+    width: 65%;
+    height: 25%;
+    right: 6%;
+    margin-left: auto;
+    margin-top: 30%;
+}
+.form_header {
+    position: static;
+    color: white;
+    margin-left: auto;
+    margin-top: auto;
+    top: -6%;
+    font-family: Calibri, Candara, Segoe, "Segoe UI";
+    font-size: 1.5vw;
+}

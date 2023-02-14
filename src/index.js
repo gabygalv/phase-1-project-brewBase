@@ -3,6 +3,7 @@ const listContainer = document.querySelector('.brewery_list');
 const upvote = document.querySelector('.dotd_like');
 const downvote = document.querySelector('.dotd_dislike');
 let rating = document.querySelector('.dotd_rating');
+const addBtn = document.querySelector('.add_button');
 
 fetch(brewAPI)
  .then(res => res.json())
@@ -89,3 +90,16 @@ downvote.addEventListener ('click', () => {
 // function downvoteDOTD(
 
 // function upvoteDOTD();
+
+
+//hide/show form
+let addBrewery = false;
+addBtn.addEventListener("click", () => {
+addBrewery = !addBrewery;
+const formCont = document.querySelector('.form_container');
+if (addBrewery) {
+    formCont.style.display = "block";
+} else {
+    formCont.style.display = "none";
+}
+});

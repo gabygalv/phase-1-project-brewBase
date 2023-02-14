@@ -162,6 +162,27 @@ body {
     font-family: Calibri, Candara, Segoe, "Segoe UI";
     font-size: 1.5vw;
 }
+input[type=text] {
+    width: 50%;
+    padding: 10px 5px;
+    margin: 5px 0;
+    box-sizing: content-box;
+  }
+  .submit {
+    position: absolute;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+
+    font-size: .9vw;
+    font-family: Calibri, Candara, Segoe, "Segoe UI";
+
+    margin-top: auto;
+    margin-left: auto;
+    top: 135%;
+    left: 1%;
+}
+
 
 .colorScheme {
     position:absolute;

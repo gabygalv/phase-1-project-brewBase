@@ -38,7 +38,14 @@ function breweryDetails(brewery) {
 //DOTD stuff//
 /////////////////////////
 
-fetch("http://localhost:3000/dotd/1")
+//random number for DOTD card
+function randomInt(min, max) {
+    return Math.floor(Math.random() * (max-min+1)) + min;
+}
+const randomDotd = randomInt(1, 11);
+// console.log(randomDotd)
+
+fetch(`http://localhost:3000/dotd/${randomDotd}`)
 .then(res => res.json())
 .then(drink => renderDotdItem(drink))
 
@@ -83,16 +90,9 @@ function renderDotdItem(drink) {
      })
 };
 
- 
-downvote.addEventListener ('click', () => {
-    // downvoteDOTD();
-})
-// function downvoteDOTD(
 
-// function upvoteDOTD();
-
-
-//hide/show form
+//hide/show form 
+//still need to figure out how to start with it hidden
 let addBrewery = false;
 addBtn.addEventListener("click", () => {
 addBrewery = !addBrewery;

@@ -39,7 +39,7 @@
       "id": "6",
       "name": "Brown Ale",
       "likes": 40,
-      "dislikes": 5,
+      "dislikes": 6,
       "img": "https://avery-website-prod.s3.us-west-2.amazonaws.com/elliesbrown_product_c5a30458e6.png"
     },
     {
@@ -54,12 +54,13 @@
       "name": "India Pale Ale",
       "likes": 40,
       "dislikes": 5,
-      "img": "https://lakefrontbrewery.com/wp-content/uploads/2021/04/ipa-bg.png"
+      "img": "https://lakefrontbrewery.com/wp-content/uploads/2021/04/ipa-bg.png",
+      "Dislikes": 6
     },
     {
       "id": "9",
       "name": "Wheat",
-      "likes": 40,
+      "likes": 41,
       "dislikes": 5,
       "img": "https://www.brewer-world.com/wp-content/uploads/2021/06/Wheat-Beer-Header.jpg"
     },

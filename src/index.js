@@ -39,13 +39,11 @@ function breweryDetails(brewery) {
 /////////////////////////
 
 //random number for DOTD card
-function randomInt(min, max) {
-    return Math.floor(Math.random() * (max-min+1)) + min;
-}
-const randomDotd = randomInt(1, 11);
-// console.log(randomDotd)
+const randomId = Math.floor(1 + Math.random() * 11);
+const drinkOfTheDay = `http://localhost:3000/dotd/${randomId}`
+console.log(randomId)
 
-fetch(`http://localhost:3000/dotd/${randomDotd}`)
+fetch(drinkOfTheDay)
 .then(res => res.json())
 .then(drink => renderDotdItem(drink))
 

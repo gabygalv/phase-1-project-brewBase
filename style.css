@@ -141,6 +141,10 @@ body {
 color: white;
 }
 
+.brewery-type:first-letter {
+    text-transform:capitalize;
+}
+
 .add_button {
     position: absolute;
     background-color: blue;

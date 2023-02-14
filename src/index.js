@@ -1,4 +1,4 @@
-const brewAPI = "https://api.openbrewerydb.org/breweries/random?size=10";
+const brewAPI = "https://api.openbrewerydb.org/breweries/random?size=15";
 const listContainer = document.querySelector('.brewery_list');
 const upvote = document.querySelector('.dotd_like');
 const downvote = document.querySelector('.dotd_dislike');
@@ -34,10 +34,10 @@ function breweryDetails(brewery) {
     const breweryWebsite = document.querySelector('.brewery_website')
     const breweryLink = document.querySelector('.brewery_link')
 
-    breweryName.innerText = brewery.name;
-    breweryType.innerText = brewery.brewery_type;
-    breweryAddress.innerText = `${brewery.city}, ${brewery.state}`;
-    breweryWebsite.innerText = brewery.website_url;
+    breweryName.innerText = `Name: ${brewery.name}`
+    breweryType.innerText = `Type: ${brewery.brewery_type}`;
+    breweryAddress.innerText = `Location: ${brewery.city}, ${brewery.state}`;
+    breweryWebsite.innerText = `Link:${brewery.website_url}`;
     breweryLink.href = brewery.website_url;
 };
 

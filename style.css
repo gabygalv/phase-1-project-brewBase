@@ -148,7 +148,7 @@ body {
     background-color: #17172E;
     border: 5px #2c2c40;
     width: 65%;
-    height: 25%;
+    height: 22%;
     right: 6%;
     margin-left: auto;
     margin-top: 30%;
@@ -166,21 +166,38 @@ input[type=text] {
     width: 50%;
     padding: 10px 5px;
     margin: 5px 0;
+    margin-left: 10px;
+    background-color:#100c2c;
+    color:white;
+    outline:none;
+    overflow:hidden;
+    border:none;
     box-sizing: content-box;
   }
+
+input::placeholder{
+    color:white;
+}
+input:focus::placeholder {
+    color:transparent;
+}
+textarea:focus, input:focus {
+    color:white;
+}
+
   .submit {
     position: absolute;
     background-color: blue;
     color: white;
     cursor: pointer;
 
-    font-size: .9vw;
+    font-size: .8vw;
     font-family: Calibri, Candara, Segoe, "Segoe UI";
 
     margin-top: auto;
     margin-left: auto;
-    top: 135%;
-    left: 1%;
+    top: 83%;
+    left: 10px;
 }
 
 

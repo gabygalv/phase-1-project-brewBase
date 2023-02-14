@@ -2,33 +2,33 @@
 <html>
     <head>
         <title>Brewery Base!</title>
-        <link rel="stylesheet" href="style.css">
+        <link class="stylesheet" rel="stylesheet" href="style.css">
         <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/988/988934.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     </head>
     <body>
-        <div class="header_container">
+      <button type="button" onclick="btnToggle()" class="colorScheme">🌙</button>
+      <div class="header_container">
             <h1 class="brewery_header">Brewery Header</h1>
             <!-- <video autoplay muted loop id= "beer_video">
               <source src="https://youtu.be/TNEk4GfEmLs" type="video/mp4">
             </video> -->
         </div>
         <div class="divider"></div>
-        <div class="dotd_container">
+      <div class="dotd_container">
             <img class="dotd_image" src="https://via.placeholder.com/150">
             <h2 class="dotd_header">Drink Of The Day!</h2>
             <p class="dotd_name"></p>
             <p class="dotd_rating"></p>
             <button type="button" class="dotd_like">👍</button>
             <button type="button" class="dotd_dislike">👎</button>
-        </div>
+      </div>
         <div class="list_container">
             <h1 class="brewerylist_header">List of Breweries</h1>
             <ul class="brewery_list">
             </ul>
             <button type="button" class="add_button">Add your own!</button>
-       </div>
+      </div>
           <div class="form_container" display="none">
       <form id="add_brewery_form">
         <h3 class="form_header">Add a Brewery</h3>
@@ -76,9 +76,7 @@
           class="submit"
         />
       </form>
-    </div>
-            
-        </div>
+      </div>
         <script src="src/index.js" defer></script>
     </body>
 </html>

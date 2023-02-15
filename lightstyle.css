@@ -262,7 +262,7 @@ textarea:focus, input:focus {
   .wrapper div {
     height: 10px;
     width: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(156, 154, 154, 0.633);
     border-radius: 10px;
     position: absolute;
     top: 10%;
@@ -273,7 +273,7 @@ textarea:focus, input:focus {
     height: 2px;
     width: 2px;
     border-radius: 10px;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(156, 154, 154, 0.633);
     position: absolute;
     top: 20%;
     right: 20%;

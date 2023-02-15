@@ -7,19 +7,33 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
+      <!-- bubbles start-->
+      <div class="wrapper">
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+      </div>
+      <!-- bubbles end -->
       <button type="button" onclick="btnToggle()" class="colorScheme">🌙</button>
       <div class="header_container">
-            <h1 class="brewery_header">Brewery Header</h1>
-            <!-- <video autoplay muted loop id= "beer_video">
-              <source src="https://youtu.be/TNEk4GfEmLs" type="video/mp4">
-            </video> -->
-            <div class="wrapper">
-              <div><span class="dot"></span></div>
-              <div><span class="dot"></span></div>
-              <div><span class="dot"></span></div>
-              <div><span class="dot"></span></div>
-              <div><span class="dot"></span></div>
-            </div>
+            <img class="brewery_header" src="assets/brewery header.png" width="100%">
         </div>
         <div class="divider"></div>
       <div class="dotd_container">
@@ -41,11 +55,13 @@
             <ul class="brewery_list">
             </ul>
             <button type="button" class="add_button">Add your own!</button>
+      <!--map stuff-->
+  
+      <iframe class="frame" width="525" height="500" frameborder="0" scrolling="no" src="" style="border: 1px solid black"></iframe><br/><small></small>
       </div>
-          <div class="form_container" display="none">
+          <div class="form_container">
       <form id="add_brewery_form">
         <h3 class="form_header">Add a Brewery</h3>
-
         <input
           type="text"
           name="name"
@@ -61,24 +77,19 @@
           placeholder="Brewery type..."
           class="input_text"
         />
-        <!-- <option value="micro">Micro</option>
-        <option value="brewpub">Brewpub</option>
-        <option value="planning">Planning</option>
-        <option value="taproom">Taproom</option>
-        <br /> -->
         <input
           type="text"
-          name="address"
+          name="location"
           value=""
-          placeholder="Brewery address..."
+          placeholder="Brewery city, state..."
           class="input_text"
         />
         <br />
         <input
           type="text"
-          name="number"
+          name="link"
           value=""
-          placeholder="Brewery phone number..."
+          placeholder="Brewery website..."
           class="input_text"
         />
         <br />

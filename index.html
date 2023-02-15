@@ -11,6 +11,7 @@
       <div class="header_container">
             <h1 class="brewery_header">Brewery Header</h1>
             <!-- <video autoplay muted loop id= "beer_video">
+
               <source src="https://youtu.be/TNEk4GfEmLs" type="video/mp4">
             </video> -->
         </div>
@@ -34,6 +35,9 @@
             <ul class="brewery_list">
             </ul>
             <button type="button" class="add_button">Add your own!</button>
+      <!--map stuff-->
+  
+      <iframe class="frame" width="525" height="500" frameborder="0" scrolling="no" src="" style="border: 1px solid black"></iframe><br/><small></small>
       </div>
           <div class="form_container" display="none">
       <form id="add_brewery_form">
@@ -54,24 +58,19 @@
           placeholder="Brewery type..."
           class="input_text"
         />
-        <!-- <option value="micro">Micro</option>
-        <option value="brewpub">Brewpub</option>
-        <option value="planning">Planning</option>
-        <option value="taproom">Taproom</option>
-        <br /> -->
         <input
           type="text"
-          name="address"
+          name="location"
           value=""
-          placeholder="Brewery address..."
+          placeholder="Brewery city, state..."
           class="input_text"
         />
         <br />
         <input
           type="text"
-          name="number"
+          name="link"
           value=""
-          placeholder="Brewery phone number..."
+          placeholder="Brewery website..."
           class="input_text"
         />
         <br />

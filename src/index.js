@@ -39,8 +39,10 @@ function breweryDetails(brewery) {
     breweryAddress.innerText = `Location: ${brewery.city}, ${brewery.state}`;
     breweryWebsite.innerText = `Link:${brewery.website_url}`;
     breweryLink.href = brewery.website_url;
+//map stuff//
+    const breweryMap = document.querySelector('.frame')
+    breweryMap.src=(`https://plus.codes/${brewery.latitude},${brewery.longitude}`)
 };
-
 /////////////////////////
 //DOTD stuff//
 /////////////////////////
@@ -102,7 +104,7 @@ function renderDotdItem(drink) {
 
 //hide/show form 
 //still need to figure out how to start with it hidden
-let addBrewery = false;
+let addBrewery = true;
 addBtn.addEventListener("click", () => {
 addBrewery = !addBrewery;
 const formCont = document.querySelector('.form_container');

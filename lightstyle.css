@@ -124,7 +124,7 @@ body {
     position: relative;
     color: black;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: 20%;
     font-family: Calibri, Candara, Segoe, "Segoe UI";
     font-size: 1vw;
 }
@@ -132,7 +132,7 @@ body {
 .brewery_details {
     position: absolute;
     color: black;
-    margin-left: 45%;
+    margin-left: 25%;
     margin-right: auto;
     font-family: Calibri, Candara, Segoe, "Segoe UI";
     font-size: 1.1vw;
@@ -223,3 +223,26 @@ textarea:focus, input:focus {
     margin: auto;
     top: 0;
 }
+/* ////////////
+///Map stuff///
+//////////// */
+
+.frame {
+    position: absolute;
+    margin-left: 60%;
+    margin-right: auto;
+    margin-top: -27%;
+  
+  -moz-transform: scale(0.5);
+  -moz-transform-origin: 0 0;
+  -o-transform: scale(0.5);
+  -o-transform-origin: 0 0;
+  -webkit-transform: scale(0.5);
+  -webkit-transform-origin: 0 0;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    #scaled-frame {
+      zoom: .5;
+    }
+  }

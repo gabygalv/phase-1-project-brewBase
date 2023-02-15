@@ -32,7 +32,7 @@ body {
 
 .dotd_image {
     position: static;
-    width: 90%;
+    width: auto;
     height: 75%;
     margin-left: 5%;
     margin-top: 5%;

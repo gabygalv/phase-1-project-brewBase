@@ -42,7 +42,7 @@ function breweryDetails(brewery) {
 //map stuff//
     const breweryMap = document.querySelector('.frame')
     breweryMap.src=(`https://plus.codes/${brewery.latitude},${brewery.longitude}`)
-};
+    };
 /////////////////////////
 //DOTD stuff//
 /////////////////////////
@@ -104,7 +104,7 @@ function renderDotdItem(drink) {
 
 //hide/show form 
 //still need to figure out how to start with it hidden
-let addBrewery = true;
+let addBrewery = false;
 addBtn.addEventListener("click", () => {
 addBrewery = !addBrewery;
 const formCont = document.querySelector('.form_container');

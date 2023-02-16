@@ -50,7 +50,7 @@
               <strong><p class="brewery_name">Name:</p></strong>
               <p class="brewery_type">Type:</p>
               <p class="brewery_location">Location:</p>
-              <a class ="brewery_link" href=""><p class="brewery_website"></p></a>
+              <a class="brewery_link" href=""><p class="brewery_website"></p></a>
             </ul>
             <ul class="brewery_list">
             </ul>
@@ -59,48 +59,58 @@
   
       <iframe class="frame" width="525" height="500" frameborder="0" scrolling="no" src="" style="border: 1px solid black"></iframe><br/><small></small>
       </div>
-          <div class="form_container">
-      <form id="add_brewery_form">
-        <h3 class="form_header">Add a Brewery</h3>
-        <input
-          type="text"
-          name="name"
-          value=""
-          placeholder="Brewery name..."
-          class="input_text"
-        />
-        <br />
-        <input
-          type="text"
-          name="type"
-          value=""
-          placeholder="Brewery type..."
-          class="input_text"
-        />
-        <input
-          type="text"
-          name="location"
-          value=""
-          placeholder="Brewery city, state..."
-          class="input_text"
-        />
-        <br />
-        <input
-          type="text"
-          name="link"
-          value=""
-          placeholder="Brewery website..."
-          class="input_text"
-        />
-        <br />
-        <input
-          type="submit"
-          name="submit"
-          value="Sip-mit"
-          class="submit"
-        />
-      </form>
-      </div>
+          <div class="form_container" style="display:none">
+            <h3 class="form_header">Add a Brewery</h3>
+            <p class="form_text">Enter your brewery here!</p>
+            <h3 class="form_header">Add a Brewery</h3>
+            <form id="add_brewery_form">
+              <input
+                type="text"
+                name="name"
+                value=""
+                placeholder="Brewery name..."
+                class="input_text"
+              />
+              <br />
+              <input
+                type="text"
+                name="type"
+                value=""
+                placeholder="Brewery type..."
+                class="input_text"
+              />
+              <br />
+              <input
+                type="text"
+                name="city"
+                value=""
+                placeholder="Brewery city..."
+                class="input_text"
+              />
+              <input
+                type="text"
+                name="state"
+                value=""
+                placeholder="Brewery state..."
+                class="input_text"
+              />
+              <br />
+              <input
+                type="text"
+                name="link"
+                value=""
+                placeholder="Brewery website..."
+                class="input_text"
+              />
+              <br />
+              <input
+                type="submit"
+                name="submit"
+                value="Sip-mit"
+                class="submit"
+              />
+             </form>
+            </div>
         <script src="src/index.js" defer></script>
     </body>
 </html>

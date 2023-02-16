@@ -1,9 +1,14 @@
-const brewAPI = "https://api.openbrewerydb.org/breweries/random?size=15";
+const brewAPI = "https://api.openbrewerydb.org/breweries/random?size=11";
+const newBrewAPI = "http://localhost:3000/breweries"
 const listContainer = document.querySelector('.brewery_list');
 const upvote = document.querySelector('.dotd_like');
 const downvote = document.querySelector('.dotd_dislike');
 let rating = document.querySelector('.dotd_rating');
 const addBtn = document.querySelector('.add_button');
+
+fetch(newBrewAPI)
+.then(resp => resp.json())
+.then(breweries => oneBrewery(breweries))
 
 fetch(brewAPI)
  .then(res => res.json())
@@ -34,7 +39,13 @@ function breweryDetails(brewery) {
     breweryName.innerText = `Name: ${brewery.name}`
     breweryType.innerText = `Type: ${brewery.brewery_type}`;
     breweryAddress.innerText = `Location: ${brewery.city}, ${brewery.state}`;
-    breweryWebsite.innerText = `Link:${brewery.website_url}`;
+
+    //removes the "Link: NULL" if theres no link
+    if(brewery.website_url == null) {
+        breweryWebsite.innerText = "";
+    } else {
+        breweryWebsite.innerText = `Link: ${brewery.website_url}`;
+    }
     
     breweryLink.href = brewery.website_url;
 //map stuff//
@@ -52,7 +63,7 @@ const drinkOfTheDay = `http://localhost:3000/dotd/${randomId}`
 fetch(drinkOfTheDay)
 .then(res => res.json())
 .then(drink => renderDotdItem(drink))
-
+ 
 function renderDotdItem(drink) {
     let drinkName = document.querySelector('.dotd_name');
     let drinkImg = document.querySelector('.dotd_image');
@@ -123,3 +134,37 @@ function btnToggle() {
         stylesheet.href= "style.css"
     }
 }
+
+    function createBrewery(brewery) {
+          fetch(newBrewAPI, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json"
+            },
+            body: JSON.stringify({
+                "name": brewery.name,
+                "brewery_type": brewery.brewery_type,
+                "city": brewery.city,
+                "state": brewery.state,
+                "website_url": brewery.website_url,
+            })
+        })
+    }
+
+    const submitForm = document.getElementById("add_brewery_form");
+    submitForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const brewery = {
+            name: e.target.name.value,
+            brewery_type: e.target.type.value,
+            city: e.target.city.value,
+            state: e.target.state.value,
+            website_url: e.target.link.value,
+        };
+
+        createBrewery(brewery);
+        listBreweries(brewery);
+        e.target.reset();
+
+    });

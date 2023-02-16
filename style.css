@@ -7,15 +7,14 @@ body {
     margin-left: 6%;
     font-family: Calibri, Candara, Segoe, "Segoe UI";
     font-size:3vw;
-    margin-right: 0;
-    max-width: 94.25%;
+    max-width: 110%;
 }
 
 .divider {
     position: static;
     background-color: #28283e;
     border: 5px #2c2c40;
-    width: calc(100.25% - 6%);
+    width: calc(100% - 6%);
     height: 50px;
     margin-right: 0;
     margin-left: 6%;
@@ -113,7 +112,7 @@ body {
     height: 45%;
     right: 6%;
     margin-left: auto;
-    margin-top: 4%;
+    margin-top: 3%;
 }
 .brewerylist_header {
     position: absolute;
@@ -139,7 +138,6 @@ li:hover {
   color:blueviolet;
   cursor:pointer;
 }
-
 .brewery_details {
     position: absolute;
     color: white;
@@ -237,10 +235,11 @@ color: white;
     background-color: #17172E;
     border: 5px #2c2c40;
     width: 65%;
-    height: 19%;
+    height: 25%;
     right: 6%;
     margin-left: auto;
     margin-top: 30%;
+    
 }
 .form_header {
     position: absolute;
@@ -266,8 +265,18 @@ input[type=text] {
     box-sizing: content-box;
   }
 
-input::placeholder{
+  select {
+    width: 35.6%;
+    padding: 5px 5px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    background-color: #100c2c;
     color:white;
+    border:none;
+  }
+  
+input::placeholder, textarea:focus, input:focus{
+    color: white;
 }
 input:focus::placeholder {
     color:transparent;
@@ -310,10 +319,10 @@ textarea:focus, input:focus {
 
     font-family: Calibri, Candara, Segoe, "Segoe UI";
 
-    margin-top: auto;
-    margin-left: auto;
-    top: 83%;
-    left: 10px;
+  margin-top: auto;
+  margin-left: auto;
+  top: 83%;
+  left: 10px;
 }
 .submit:focus,
 .submit:hover {

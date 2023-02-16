@@ -177,17 +177,19 @@ color: black;
     font-family: Calibri, Candara, Segoe, "Segoe UI";
     font-size: 1.5vw;
 }
-
-input[type=text] {
-    width: 50%;
-    padding: 10px 5px;
-    margin: 5px 0;
-    margin-left: 10px;
-    color: black;
-    outline:none;
-    overflow:hidden;
+  input[type=text],
+select {
+    width: 20%;
+    margin-left: auto;
+    background-color:white;
+    color:black;
     border:none;
-    box-sizing: content-box;
+    margin: 1%;
+    font-family: Calibri, Candara, Segoe, "Segoe UI";
+    font-size: 1vw;
+    width: 50%;
+    padding: 5px 2px;
+    margin: 5px 0;
   }
   
 input::placeholder{
@@ -199,19 +201,19 @@ input:focus::placeholder {
 textarea:focus, input:focus {
     color:black;
 }
-  .submit {
-    position: absolute;
-    background-color: darkslategray;
-    color: white;
-    cursor: pointer;
+.submit {
+  position: absolute;
+  background-color: darkslategray;
+  color: white;
+  cursor: pointer;
 
-    font-size: .8vw;
-    font-family: Calibri, Candara, Segoe, "Segoe UI";
+  font-size: .8vw;
+  font-family: Calibri, Candara, Segoe, "Segoe UI";
 
-    margin-top: auto;
-    margin-left: auto;
-    top: 83%;
-    left: 10px;
+  margin-top: auto;
+  margin-left: 15%;
+  top: 5%;
+  left: 20px;
 }
 
 .colorScheme {

@@ -97,14 +97,11 @@ function renderDotdItem(drink) {
 
      })
 };
-
 //hide/show form 
 //still need to figure out how to start with it hidden
-let addBrewery = false;
 addBtn.addEventListener("click", () => {
-addBrewery = !addBrewery;
 const formCont = document.querySelector('.form_container');
-if (addBrewery) {
+if (formCont.style.display === "none") {
     formCont.style.display = "block";
 } else {
     formCont.style.display = "none";
@@ -123,3 +120,14 @@ function btnToggle() {
         stylesheet.href= "style.css"
     }
 }
+
+//form stuff
+const addBrewery = document.getElementById("add_brewery_form")
+addBrewery.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const newBrewery = document.createElement("li")
+    const brewName = document.querySelector('#brewName').value;
+    newBrewery.innerText = brewName
+    listContainer.appendChild(newBrewery);
+    addBrewery.reset();
+});

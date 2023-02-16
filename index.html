@@ -33,7 +33,7 @@
       <!-- bubbles end -->
       <button type="button" onclick="btnToggle()" class="colorScheme">🌙</button>
       <div class="header_container">
-            <img class="brewery_header" src="assets/brewery header.png" width="100%">
+            <img class="brewery_header" src="assets/brewery header.png" width="92%">
         </div>
         <div class="divider"></div>
       <div class="dotd_container">
@@ -59,7 +59,7 @@
   
       <iframe class="frame" width="525" height="500" frameborder="0" scrolling="no" src="" style="border: 1px solid black"></iframe><br/><small></small>
       </div>
-          <div class="form_container">
+          <div class="form_container" display="none">
       <form id="add_brewery_form">
         <h3 class="form_header">Add a Brewery</h3>
         <input
@@ -68,16 +68,17 @@
           value=""
           placeholder="Brewery name..."
           class="input_text"
+          id="brewName"
         />
-        <br />
-        <input
-          type="text"
-          name="type"
-          value=""
-          placeholder="Brewery type..."
-          class="input_text"
-        />
-        <input
+        <br/>
+        <select id="brewType" name="brewType">
+          <option value="type">Brewery Type...</option>
+          <option value="Micro">Micro</option>
+          <option value="Brewpub">Brewpub</option>
+          <option value="Planning">Planning</option>
+          <option value="Taproom">Taproom</option>
+          <br/>
+          <input
           type="text"
           name="location"
           value=""

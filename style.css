@@ -109,7 +109,7 @@ body {
     height: 45%;
     right: 6%;
     margin-left: auto;
-    margin-top: 4%;
+    margin-top: 3%;
 }
 .brewerylist_header {
     position: absolute;
@@ -127,8 +127,8 @@ body {
     margin-right: 20%;
     font-family: Calibri, Candara, Segoe, "Segoe UI";
     font-size: 1vw;
+    cursor: pointer;
 }
-
 .brewery_details {
     position: absolute;
     color: white;
@@ -168,53 +168,52 @@ color: white;
     right: 6%;
     margin-left: auto;
     margin-top: 30%;
+    
 }
 .form_header {
     position: absolute;
     color: white;
     margin-left: auto;
     margin-top: auto;
-    padding: 10px 5px;
+  
     top: -15%;
     font-family: Calibri, Candara, Segoe, "Segoe UI";
     font-size: 1.5vw;
 }
-input[type=text] {
-    width: 50%;
-    padding: 5px 5px;
-    margin: 5px 0;
-    margin-left: 10px;
-    background-color:#100c2c;
-    color:white;
-    outline:none;
-    overflow:hidden;
+input[type=text],
+select {
+    width: 20%;
+    margin-left: auto;
+    background-color:28283e;
+    color:black;
     border:none;
-    box-sizing: content-box;
+    margin: 1%;
+    font-family: Calibri, Candara, Segoe, "Segoe UI";
+    font-size: 1vw;
+    width: 50%;
+    padding: 5px 2px;
+    margin: 5px 0;
   }
-
-input::placeholder{
-    color:white;
+  
+input::placeholder, textarea:focus, input:focus{
+    color:black;
 }
 input:focus::placeholder {
     color:transparent;
 }
-textarea:focus, input:focus {
-    color:white;
-}
+.submit {
+  position: absolute;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
 
-  .submit {
-    position: absolute;
-    background-color: blue;
-    color: white;
-    cursor: pointer;
+  font-size: .8vw;
+  font-family: Calibri, Candara, Segoe, "Segoe UI";
 
-    font-size: .8vw;
-    font-family: Calibri, Candara, Segoe, "Segoe UI";
-
-    margin-top: auto;
-    margin-left: auto;
-    top: 83%;
-    left: 10px;
+  margin-top: auto;
+  margin-left: 15%;
+  top: -10%;
+  left: 20px;
 }
 
 
@@ -238,7 +237,7 @@ textarea:focus, input:focus {
     position: absolute;
     margin-left: 60%;
     margin-right: auto;
-    margin-top: -27%;
+    margin-top: -25%;
   
   -moz-transform: scale(0.5);
   -moz-transform-origin: 0 0;
@@ -390,4 +389,4 @@ textarea:focus, input:focus {
       transform: scale(1.3) translateY(-100px) rotate(360deg);
     }
   }
-  
+

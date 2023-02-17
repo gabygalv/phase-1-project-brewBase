@@ -72,8 +72,8 @@ function renderDotdItem(drink) {
         drink.likes +=1;
         nbrLikes +=1;
         drinkLikes.textContent = `Votes: ${nbrLikes}`
-        downvote.disabled = true;
-        upvote.disabled = true;
+        downvote.setAttribute = ("aria-disabled","true");
+        upvote.setAttribute = ("aria-disabled","true");
 
         fetch(drinkOfTheDay, {
             method: "PATCH",

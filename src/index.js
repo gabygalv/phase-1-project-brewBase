@@ -133,8 +133,8 @@ function createBrewery(brewery) {
 }
 
 
-const submitForm = document.getElementById("#add_brewery_form");
-submitForm.addEventListener("#submit", (e) => {
+const submitForm = document.getElementById("add_brewery_form");
+submitForm.addEventListener("submit", (e) => {
   e.preventDefault();
   const brewery = {
       name: e.target.brewName.value,
@@ -147,5 +147,6 @@ submitForm.addEventListener("#submit", (e) => {
   createBrewery(brewery);
   listBreweries(brewery);
   e.target.reset();
+  console.log("brewery")
 
 });

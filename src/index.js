@@ -137,7 +137,7 @@ const submitForm = document.getElementById("#add_brewery_form");
 submitForm.addEventListener("#submit", (e) => {
   e.preventDefault();
   const brewery = {
-      name: e.target.name.value,
+      name: e.target.brewName.value,
       brewery_type: e.target.brewType.value,
       city: e.target.city.value,
       state: e.target.state.value,

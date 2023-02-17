@@ -1,107 +1,105 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Brewery Base!</title>
-        <link class="stylesheet" rel="stylesheet" href="style.css">
-        <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/988/988934.png">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-      <!-- bubbles start -->
-      <div class="wrapper">
-        <div><span class="dot"></span></div>
-        <div><span class="dot"></span></div>
-        <div><span class="dot"></span></div>
-        <div><span class="dot"></span></div>
-        <div><span class="dot"></span></div>
-        <div><span class="dot"></span></div>
-        <div><span class="dot"></span></div>
-        <div><span class="dot"></span></div>
-        <div><span class="dot"></span></div>
-        <div><span class="dot"></span></div>
-        <div><span class="dot"></span></div>
-        <div><span class="dot"></span></div>
-        <div><span class="dot"></span></div>
-        <div><span class="dot"></span></div>
-        <div><span class="dot"></span></div>
-        <div><span class="dot"></span></div>
-        <div><span class="dot"></span></div>
-        <div><span class="dot"></span></div>
-        <div><span class="dot"></span></div>
-        <div><span class="dot"></span></div>
-      </div>
-      <!-- bubbles end -->
-      <button type="button" onclick="btnToggle()" class="colorScheme">🌙</button>
-      <div class="header_container">
-            <img class="brewery_header" src="assets/brewery header.png" width="92%">
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Brewery Base</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/988/988934.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href=dist/css/bootstrap.css rel="stylesheet">
+  </head>
+  <body data-bs-theme="dark" id="theme_toggle">
+
+  <button type="button" onclick="btnToggle()" class="btn btn-outline-warning" id="colorScheme">🌙</button>
+  <div class="container-lg">
+    <div class="grid gap-2 row-gap-5">
+        <img class="img-fluid" src="assets/brewery header.png">
+    </div>
+    <div class="grid gap-2 row-gap-5"></div>
+    <div class="grid gap-2 row-gap-5">
+    <div class="row">
+    <div class="col">
+        <div class="card">
+            <div class="card-header">
+                <figure class="text-center"><p class="h3" id="dotd_header">Drink Of The Day:</p></figure>
+            </div>
+            <div class="card-body">
+                <figure class="text-center"><h5 class="card-title" id="dotd_name"></h5></figure>
+                <img class="rounded mx-auto d-block" id="dotd_image" src="https://via.placeholder.com/150" style="width:200px">
+            </div>
+        <figure class="text-center"><p class="h5" id="dotd_rating"></p></figure>
+        <div class="btn-group" role="group" aria-label="dotd_votes">
+            <button type="button" class="btn btn-outline-warning" id="dotd_like">👍</button>
+            <button type="button" class="btn btn-outline-warning" id="dotd_dislike">👎</button>
         </div>
-        <div class="divider"></div>
-      <div class="dotd_container">
-            <img class="dotd_image" src="https://via.placeholder.com/150">
-            <h2 class="dotd_header">Drink Of The Day!</h2>
-            <p class="dotd_name"></p>
-            <p class="dotd_rating"></p>
-            <button type="button" class="dotd_like">👍</button>
-            <button type="button" class="dotd_dislike">👎</button>
-      </div>
-        <div class="list_container">
-            <h1 class="brewerylist_header">List of Breweries</h1>
-            <ul class="brewery_details">
-              <strong><p class="brewery_name">Name:</p></strong>
-              <p class="brewery_type">Type:</p>
-              <p class="brewery_location">Location:</p>
-              <a class ="brewery_link" href=""><p class="brewery_website"></p></a>
-            </ul>
-            <ul class="brewery_list">
-            </ul>
-            <button type="button" class="add_button">Add your own!</button>
-      <!--map stuff-->
-  
-      <iframe class="frame" width="525" height="500" frameborder="0" scrolling="no" src="" style="border: 1px solid black"></iframe><br/><small></small>
-      </div>
-          <div class="form_container" display="none">
-      <form id="add_brewery_form">
-        <h3 class="form_header">Add a Brewery</h3>
-        <input
-          type="text"
-          name="name"
-          value=""
-          placeholder="Brewery name..."
-          class="input_text"
-          id="brewName"
-        />
-        <br/>
-        <select id="brewType" name="brewType">
-          <option value="type">Brewery Type...</option>
-          <option value="Micro">Micro</option>
-          <option value="Brewpub">Brewpub</option>
-          <option value="Planning">Planning</option>
-          <option value="Taproom">Taproom</option>
-          <br/>
-          <input
-          type="text"
-          name="location"
-          value=""
-          placeholder="Brewery city, state..."
-          class="input_text"
-        />
-        <br />
-        <input
-          type="text"
-          name="link"
-          value=""
-          placeholder="Brewery website..."
-          class="input_text"
-        />
-        <br />
-        <input
-          type="submit"
-          name="submit"
-          value="Sip-mit"
-          class="submit"
-        />
-      </form>
-      </div>
-        <script src="src/index.js" defer></script>
-    </body>
+
+    </div>
+    </div>
+    <div id="brewery_list"class="col">
+        <p class="h3" id="brewerylist_header">List of Breweries</p>
+        <ul class="pe-auto">
+        </ul>
+ 
+    </div>
+    <div class="col">
+        <p id="brewery_details">
+          <strong><p class="brewery_name">Name:</p></strong>
+          <p id="brewery_type" class="text-capitalize">type:</p>
+          <p class="brewery_location">Location:</p>
+          <a class ="brewery_link" href=""><p class="brewery_website"></p></a>
+        </p>
+  <!--map stuff-->
+        <iframe class="embed-responsive" id="frame" src="" width="400" height="400"></iframe>
+    </div>
+</div>   
+</div>
+    <button class="btn btn-outline-warning" type="button" data-bs-toggle="collapse"data-bs-target="#formToggle" aria-expanded="false" aria-controls="formToggle">Add your own!</button>
+    <div class="collapse" id="formToggle">
+    <div class="">
+  <form id="add_brewery_form">
+    <div class="row mb-3">
+    <p class="h3" id="form_header">Add a Brewery</p>
+    </div>
+    <div class="row mb-3" style="width: 200px;">
+    <input
+      type="text"
+      name="name"
+      value=""
+      placeholder="Brewery name..."
+      class="input_text"
+      id="brewName"
+    />
+    </div>
+    <div class="row mb-3" style="width: 200px;">
+    <select id="brewType" name="brewType">
+      <option value="type">Brewery Type...</option>
+      <option value="Micro">Micro</option>
+      <option value="Brewpub">Brewpub</option>
+      <option value="Planning">Planning</option>
+      <option value="Taproom">Taproom</option>
+    </select></div>
+    <div class="row mb-3" style="width: 200px;">
+      <input
+      type="text"
+      name="location"
+      value=""
+      placeholder="Brewery city, state..."
+      class="input_text"
+    /></div>
+    <div class="row mb-3"style="width: 200px;">
+    <input
+      type="text"
+      name="link"
+      value=""
+      placeholder="Brewery website..."
+      class="input_text"
+    /></div>
+    <button type="submit" class="btn btn-outline-warning">Sip-mit</button>
+  </form>
+</div>
+</div>
+  </div>
+    <script src=dist/js/bootstrap.js></script>
+    <script src="src/index.js" defer></script>
+  </body>
 </html>

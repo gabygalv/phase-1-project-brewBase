@@ -1,9 +1,9 @@
-const brewAPI = "https://api.openbrewerydb.org/breweries/random?size=15";
-const listContainer = document.querySelector('.brewery_list');
-const upvote = document.querySelector('.dotd_like');
-const downvote = document.querySelector('.dotd_dislike');
-let rating = document.querySelector('.dotd_rating');
-const addBtn = document.querySelector('.add_button');
+const brewAPI = "https://api.openbrewerydb.org/breweries/random?size=11";
+const listContainer = document.querySelector('#brewery_list');
+const upvote = document.querySelector('#dotd_like');
+const downvote = document.querySelector('#dotd_dislike');
+let rating = document.querySelector('#dotd_rating');
+const addBtn = document.querySelector('#add_button');
 
 fetch(brewAPI)
  .then(res => res.json())
@@ -12,21 +12,15 @@ fetch(brewAPI)
  //iterates through the breweries array
  function oneBrewery(breweries) {
     breweries.forEach(listBreweries);
- }
-
- //creates an li for each brewery in the breweries array
- //event listener starts the breweryDetails function
- function listBreweries(brewery) {
+ } function listBreweries(brewery) {
     const breweryName = document.createElement('li');
     breweryName.innerText = brewery.name;
     breweryName.addEventListener('click', () => breweryDetails(brewery));
     listContainer.appendChild(breweryName);
 }
-
-//will fill in when we have a div for brewery details
 function breweryDetails(brewery) {
     const breweryName = document.querySelector('.brewery_name')
-    const breweryType = document.querySelector('.brewery_type')
+    const breweryType = document.querySelector('#brewery_type')
     const breweryAddress = document.querySelector('.brewery_location')
     const breweryWebsite = document.querySelector('.brewery_website')
     const breweryLink = document.querySelector('.brewery_link')
@@ -38,14 +32,12 @@ function breweryDetails(brewery) {
     
     breweryLink.href = brewery.website_url;
 //map stuff//
-    const breweryMap = document.querySelector('.frame')
+    const breweryMap = document.querySelector('#frame')
     breweryMap.src=(`https://plus.codes/${brewery.latitude},${brewery.longitude}`)
     };
 /////////////////////////
 //DOTD stuff//
 /////////////////////////
-
-//random number for DOTD card
 const randomId = Math.floor(1 + Math.random() * 11);
 const drinkOfTheDay = `http://localhost:3000/dotd/${randomId}`
 
@@ -54,20 +46,20 @@ fetch(drinkOfTheDay)
 .then(drink => renderDotdItem(drink))
 
 function renderDotdItem(drink) {
-    let drinkName = document.querySelector('.dotd_name');
-    let drinkImg = document.querySelector('.dotd_image');
-    let drinkLikes = document.querySelector('.dotd_rating');
+    let drinkName = document.querySelector('#dotd_name');
+    let drinkImg = document.querySelector('#dotd_image');
+    let drinkLikes = document.querySelector('#dotd_rating');
     let nbrLikes = drink.likes - drink.dislikes;
     
 
     drinkName.innerText = drink.name;
     drinkImg.src = drink.img;
-    drinkLikes.innerText = nbrLikes;
+    drinkLikes.innerText = `Votes: ${nbrLikes}`;
 
     upvote.addEventListener ('click', () => {
         drink.likes +=1;
         nbrLikes +=1;
-        drinkLikes.textContent = nbrLikes;
+        drinkLikes.textContent = `Votes: ${nbrLikes}`
         downvote.disabled = true;
         upvote.disabled = true;
 
@@ -83,7 +75,7 @@ function renderDotdItem(drink) {
      downvote.addEventListener ('click', () => {
         drink.dislikes +=1;
         nbrLikes -=1;
-        drinkLikes.textContent = nbrLikes;
+        drinkLikes.textContent = `Votes: ${nbrLikes}`;
         downvote.disabled = true;
         upvote.disabled = true;
 
@@ -97,27 +89,16 @@ function renderDotdItem(drink) {
 
      })
 };
-//hide/show form 
-//still need to figure out how to start with it hidden
-addBtn.addEventListener("click", () => {
-const formCont = document.querySelector('.form_container');
-if (formCont.style.display === "none") {
-    formCont.style.display = "block";
-} else {
-    formCont.style.display = "none";
-}
-});
-
 //light mode toggle
-const lightDark = document.querySelector(".colorScheme");
+const lightDark = document.querySelector("#colorScheme");
 function btnToggle() {
-    const stylesheet = document.querySelector('.stylesheet')
+    const stylesheet = document.querySelector('#theme_toggle')
     if(lightDark.innerHTML == "🌙"){
         lightDark.textContent = "☀️";
-        stylesheet.href= "lightstyle.css"
+        stylesheet.setAttribute("data-bs-theme", "light")
     } else if(lightDark.innerHTML=="☀️"){
         lightDark.textContent = "🌙";
-        stylesheet.href= "style.css"
+        stylesheet.setAttribute("data-bs-theme", "dark")
     }
 }
 

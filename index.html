@@ -35,11 +35,12 @@
 
     </div>
     </div>
-    <div id="brewery_list"class="col">
+    <div class="col">
         <p class="h3" id="brewerylist_header">List of Breweries</p>
-        <ul class="pe-auto">
+        <ul id="brewery_list" class="pe-auto">
         </ul>
- 
+     <button class="btn btn-outline-warning" type="button" data-bs-toggle="collapse"data-bs-target="#formToggle" aria-expanded="false" aria-controls="formToggle">Add your own!</button>
+
     </div>
     <div class="col">
         <p id="brewery_details">
@@ -49,18 +50,17 @@
           <a class ="brewery_link" href=""><p class="brewery_website"></p></a>
         </p>
   <!--map stuff-->
-        <iframe class="embed-responsive" id="frame" src="" width="400" height="400"></iframe>
+        <iframe class="embed-responsive" id="scaled-frame" src="" width="500" height="500"></iframe>
     </div>
 </div>   
 </div>
-    <button class="btn btn-outline-warning" type="button" data-bs-toggle="collapse"data-bs-target="#formToggle" aria-expanded="false" aria-controls="formToggle">Add your own!</button>
     <div class="collapse" id="formToggle">
     <div class="">
   <form id="add_brewery_form">
     <div class="row mb-3">
     <p class="h3" id="form_header">Add a Brewery</p>
     </div>
-    <div class="row mb-3" style="width: 200px;">
+    <div class="row mb-3" style="width: 400px;">
     <input
       type="text"
       name="name"
@@ -70,7 +70,7 @@
       id="brewName"
     />
     </div>
-    <div class="row mb-3" style="width: 200px;">
+    <div class="row mb-3" style="width: 400px;">
     <select id="brewType" name="brewType">
       <option value="type">Brewery Type...</option>
       <option value="Micro">Micro</option>
@@ -78,7 +78,7 @@
       <option value="Planning">Planning</option>
       <option value="Taproom">Taproom</option>
     </select></div>
-    <div class="row mb-3" style="width: 200px;">
+    <div class="row mb-3" style="width: 400px;">
       <input
       type="text"
       name="location"
@@ -86,7 +86,7 @@
       placeholder="Brewery city, state..."
       class="input_text"
     /></div>
-    <div class="row mb-3"style="width: 200px;">
+    <div class="row mb-3"style="width: 400px;">
     <input
       type="text"
       name="link"
@@ -94,7 +94,7 @@
       placeholder="Brewery website..."
       class="input_text"
     /></div>
-    <button type="submit" class="btn btn-outline-warning">Sip-mit</button>
+    <button id="submit" type="submit" class="btn btn-outline-warning">Sip-mit</button>
   </form>
 </div>
 </div>

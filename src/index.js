@@ -1,4 +1,5 @@
 const brewAPI = "https://api.openbrewerydb.org/breweries/random?size=11";
+const newBrewAPI = "http://localhost:3000/breweries"
 const listContainer = document.querySelector('#brewery_list');
 const upvote = document.querySelector('#dotd_like');
 const downvote = document.querySelector('#dotd_dislike');
@@ -8,6 +9,10 @@ const addBtn = document.querySelector('#add_button');
 fetch(brewAPI)
  .then(res => res.json())
  .then(breweries => oneBrewery(breweries))
+
+ fetch(newBrewAPI)
+.then(resp => resp.json())
+.then(breweries => oneBrewery(breweries))
 
  //iterates through the breweries array
  function oneBrewery(breweries) {
@@ -29,10 +34,17 @@ function breweryDetails(brewery) {
     breweryType.innerText = `Type: ${brewery.brewery_type}`;
     breweryAddress.innerText = `Location: ${brewery.city}, ${brewery.state}`;
     breweryWebsite.innerText = `Link:${brewery.website_url}`;
+
+      //removes the "Link: NULL" if theres no link
+      if(brewery.website_url == null) {
+        breweryWebsite.innerText = "";
+    } else {
+        breweryWebsite.innerText = `Link: ${brewery.website_url}`;
+    }
     
     breweryLink.href = brewery.website_url;
 //map stuff//
-    const breweryMap = document.querySelector('#frame')
+    const breweryMap = document.querySelector('#scaled-frame')
     breweryMap.src=(`https://plus.codes/${brewery.latitude},${brewery.longitude}`)
     };
 /////////////////////////
@@ -103,12 +115,37 @@ function btnToggle() {
 }
 
 //form stuff
-const addBrewery = document.getElementById("add_brewery_form")
-addBrewery.addEventListener("submit", (e) => {
-    e.preventDefault();
-    const newBrewery = document.createElement("li")
-    const brewName = document.querySelector('#brewName').value;
-    newBrewery.innerText = brewName
-    listContainer.appendChild(newBrewery);
-    addBrewery.reset();
+function createBrewery(brewery) {
+    fetch(newBrewAPI, {
+      method: "POST",
+      headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json"
+      },
+      body: JSON.stringify({
+          "name": brewery.name,
+          "brewery_type": brewery.brewery_type,
+          "city": brewery.city,
+          "state": brewery.state,
+          "website_url": brewery.website_url,
+      })
+  })
+}
+
+
+const submitForm = document.getElementById("#add_brewery_form");
+submitForm.addEventListener("#submit", (e) => {
+  e.preventDefault();
+  const brewery = {
+      name: e.target.name.value,
+      brewery_type: e.target.brewType.value,
+      city: e.target.city.value,
+      state: e.target.state.value,
+      website_url: e.target.link.value,
+  };
+
+  createBrewery(brewery);
+  listBreweries(brewery);
+  e.target.reset();
+
 });

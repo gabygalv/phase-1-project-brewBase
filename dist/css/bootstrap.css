@@ -574,7 +574,10 @@ output {
 
 iframe {
   border: 0;
-  zoom: .5;
+}
+
+#scaled-frame {
+    zoom: 0.75;
 }
 
 summary {
